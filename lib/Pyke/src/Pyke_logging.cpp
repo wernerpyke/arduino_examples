@@ -1,10 +1,10 @@
-#include "logging_functions.h"
+#include <Arduino.h>
+#include "Pyke.h"
 
-void startLogging()
+void setupLogging()
 {
     // Start serial communication at 9600 bits per second
     Serial.begin(9600);
-    delay(1000);
 }
 
 void debugMessage(const char *format, ...)
@@ -21,7 +21,7 @@ void debugMessage(const char *format, ...)
     if (len < 0)
     {
         va_end(arg);
-        Serial.println(String(""));
+        Serial.println("");
         return;
     }
 
@@ -31,10 +31,9 @@ void debugMessage(const char *format, ...)
         if (temp == NULL)
         {
             va_end(arg);
-            Serial.println(String(""));
+            Serial.println("");
             return;
         }
-
         vsnprintf(temp, len + 1, format, arg);
     }
 

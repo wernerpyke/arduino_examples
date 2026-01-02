@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "logging_functions.h"
+#include <Pyke.h>
 
 const int led1 = 9;
 const int led2 = 10;
@@ -15,7 +15,7 @@ int distance = 0;
 
 void setup()
 {
-    startLogging();
+    setupLogging();
 
     pinMode(led1, OUTPUT);
     pinMode(led2, OUTPUT);

@@ -1,6 +1,5 @@
 #include <Arduino.h>
-
-#include "random_functions.h"
+#include "Pyke.h"
 
 void setupRandom() {
     randomSeed(analogRead(0));

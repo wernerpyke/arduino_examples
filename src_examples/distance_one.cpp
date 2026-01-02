@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "logging_functions.h"
+#include <Pyke.h>
 
 const int led = 9; 
 const int echo = 6;
@@ -10,7 +10,7 @@ int distance = 0;
 
 void setup()
 {
-    startLogging();
+    setupLogging();
 
     debugMessage("STARTING");
 

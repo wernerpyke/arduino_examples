@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "logging_functions.h"
+#include <Pyke.h>
 
 // Describe what a light is. Each light has a name, a pin and a delay
 struct Light {
@@ -14,7 +14,7 @@ int activeLightIndex = 0;
 
 void setup()
 {
-    startLogging();
+    setupLogging();
 
     debugMessage("SETTING UP LIGHTS");
 
