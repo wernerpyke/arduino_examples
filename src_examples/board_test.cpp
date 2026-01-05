@@ -16,7 +16,7 @@ void blah(Test& t) {
 }
 
 void setup() {
-  setupRandom();
+  setupPyke();
   
   pinMode(LED_BUILTIN, OUTPUT);
 

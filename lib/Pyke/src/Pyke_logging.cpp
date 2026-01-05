@@ -1,10 +1,13 @@
 #include <Arduino.h>
 #include "Pyke.h"
 
-void setupLogging()
+void setupPyke()
 {
     // Start serial communication at 9600 bits per second
     Serial.begin(9600);
+
+    // Initialise RNG
+    randomSeed(analogRead(0));
 }
 
 void debugMessage(const char *format, ...)

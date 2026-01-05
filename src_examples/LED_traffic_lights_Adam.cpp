@@ -14,7 +14,7 @@ int activeLightIndex = 0;
 
 void setup()
 {
-    setupLogging();
+    setupPyke();
 
     debugMessage("SETTING UP LIGHTS");
 

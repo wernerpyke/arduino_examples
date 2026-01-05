@@ -10,7 +10,7 @@ int distance = 0;
 
 void setup()
 {
-    setupLogging();
+    setupPyke();
 
     debugMessage("STARTING");
 

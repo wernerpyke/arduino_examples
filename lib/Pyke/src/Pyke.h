@@ -1,7 +1,6 @@
 #pragma once
 
-void setupLogging();
+void setupPyke();
 void debugMessage(const char *format, ...);
 
-void setupRandom();
 int randomWaitTime();
